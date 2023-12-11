@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<input type="text" placeholder="select color" id="champ">
+<hr>
+<div id="box"></div>
+<button onclick ="changeColor()">apply</button>
+
+<script>
+
+var body = document.getElementsByTagName("body")[0];
+function changeColor(){
+    let champ = document.querySelector("#champ").value;
+    body.style.backgroundColor = champ ;
+    document.querySelector("#box").innerHTML = champ ;
+    }
+
+// .innerHTML permet de modifier ou ajouter du contenu textuel dans une balise HTML
+// la value permet de recup l'element d'un champ de formulaire
+// document.querySelector("#box").setAttribute("class", "toto");
+// setAttribute permet de modifier ou ajouter la valeur d'un attribut d'une balise HTML
+</script>
+
